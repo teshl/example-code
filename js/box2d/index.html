@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>URdigital</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+    
+    <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+</head>
+<body onresize="resizeWindow()" onblur="stopBgAnimation();" onfocus="startBgAnimation();" onload="initBgAnimation();">
+	<div id="page" class="page page_main">
+		<div class="header clearfix">
+			<ul class="nav">
+				<li class="nav__item">
+					<a href="/" class="nav__link">Портфолио</a>
+				</li>
+				<li class="nav__item">
+					<a href="/" class="nav__link">О нас</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-desc">
+			<a href="#" class="logo logo_desc">
+				<div class="logo__title"><span>Hi</span>digital</div>
+			</a>
+			<p>Мы команда опытных специалистов, разрабатывающая эффективные веб решения для среднего бизнеса. Креативность 
+и простота решений, готовность нести ответственность за результаты — наш  подход. <br /><a href="#" class="red">Как-то так</a>.</p>
+		</div>
+		
+        <div style="height:140px" class="content page-bg">
+			<!--<img class="" src="img/bg_page.png" alt="">-->
+		</div>
+        
+		<div class="footer">
+			<span class="footer__item">+7 (012) 345-67-89</span>
+			<a href="mailto:>teshl117@gmail.com" class="footer__item">teshl117@gmail.com</a>
+		</div>
+	</div>
+    
+    <div>
+        <canvas style="position: absolute; top:0px; left:0px; z-index:-1000; border:solid 0px;" id="bg_animation">Обновите браузер</canvas>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+    <script src="js/Box2dWeb-2.1.a.3.min.js"></script>
+    <script src="js/bg_animation.js"></script>
+</body>
+</html>
